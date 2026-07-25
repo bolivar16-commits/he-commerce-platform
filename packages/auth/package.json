@@ -1,0 +1,1 @@
+{"name":"@he/auth","version":"1.0.0","main":"./dist/index.js","types":"./dist/index.d.ts","files":["dist"],"scripts":{"build":"tsc"},"dependencies":{"@he/types":"workspace:*","next-auth":"^5.0.0"},"devDependencies":{"typescript":"^5.3.3","next":"^15.0.0"}}
