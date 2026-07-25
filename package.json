@@ -1,0 +1,33 @@
+{
+  "name": "he-commerce-platform",
+  "version": "1.0.0",
+  "description": "HE Commerce Platform - Premium e-commerce for Hiciano Esencias",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,json,md}\"",
+    "db:push": "cd packages/database && npx prisma db push",
+    "db:migrate": "cd packages/database && npx prisma migrate dev",
+    "db:studio": "cd packages/database && npx prisma studio",
+    "clean": "turbo clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "turbo": "^1.13.3",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
